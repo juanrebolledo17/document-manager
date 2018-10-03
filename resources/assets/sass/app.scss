@@ -1,0 +1,44 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap.scss";
+
+// custom styles
+
+
+.landing-page {
+  width: 100vw !important;
+  height: 100vh !important;
+  background: coral;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .card {
+    width: 55%;
+  }
+
+  .login-page,
+  .register-page,
+  .email-reset-page,
+  .reset-page,
+  .verify-email-page {
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-register-from-login-page {
+      padding-left: 0 !important;
+    }
+  }
+}
