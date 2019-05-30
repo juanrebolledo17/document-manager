@@ -1,0 +1,276 @@
+// @font-face {
+//   font-family: 'Open Sans';
+//   src: url('../../../public/fonts/OpenSans-Regular.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Raleway';
+//   src: url('../../../public/fonts/Raleway-Regular.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Poppins';
+//   src: url('../../../public/fonts/Poppins-Regular.ttf');
+// }
+
+body {
+  font-family: 'Segoe UI','Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+ul {
+  list-style: none;
+
+  li {
+    list-style: none;
+  }
+}
+
+input {
+  font-weight: 700;
+}
+
+.app-header.navbar {
+  padding: 0 !important;
+}
+
+// .app-header {
+//   .navbar {
+//     padding: 0 !important;
+//   }
+// }
+
+.user-email {
+  color: rgba(0,0,0, .5);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.landing-page {
+  width: 100vw !important;
+  height: 100vh !important;
+  // background: url('../../../public/img/pexels-photo-1038935.jpeg');
+  background-color: #ccc;
+  background-image: url('../../../public/img/pexels-photo-1038935.jpeg');
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .card {
+    width: 55%;
+    background: transparent;
+    border: 1px solid #333; // 0.16 and 0.23
+    box-shadow: 0 3px 20px rgba(255,255,255,.45),
+                0 -3px 20px rgba(255,255,255, .45),
+                0 3px 20px rgba(255,255,255, .5),
+                0 -3px 20px rgba(255,255,255, .5);
+
+    .card-header {
+      border-bottom: 1px solid #333;
+      color: #000;
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+
+    .card-body {
+      color: #000;
+      font-weight: 500;
+    }
+  }
+
+  .login-page,
+  .register-page,
+  .email-reset-page,
+  .reset-page,
+  .verify-email-page {
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn-register-from-login-page {
+      padding-left: 0 !important;
+    }
+
+    .login-btn,
+    .btn-register,
+    .btn-resend-confirmation-email,
+    .btn-reset-password {
+      background: transparent;
+      border: 1px solid #fff;
+      transition: all ease .3s;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+        font-weight: 500;
+      }
+    }
+
+    .forgotten-password,
+    .btn-register-from-login-page,
+    .btn-access {
+      color: #fff;
+      transition: all ease .3s;
+
+      &:hover {
+        color: #000;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.col-md-6.offset-md-4 {
+  .btn-upload {
+    background: rgba(0,0,0,.7);
+    border: 1px solid #ccc;
+    transition: all ease .2s;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+      font-weight: 700;
+      border: 1px solid #000;
+    }
+  }
+}
+
+.app-header.navbar {
+  ul.nav.navbar-nav {
+    font-family: 'Segoe UI','Raleway', sans-serif;
+  }
+
+  .dropdown-menu {
+    a.dropdown-item {
+      color: rgba(0,0,0,.7);
+      padding: .5rem 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.divider {
+  height: 1px;
+  background: rgb(204, 204, 204);
+}
+
+.btn-delete-file {
+  background: transparent !important;
+  border: none;
+  color: #2F353A !important;
+  transition: all ease .3s;
+
+  &:hover {
+    cursor: pointer;
+    color: #20A8D8 !important;
+  }
+}
+
+.btn-download-file {
+  color: #2F353A;
+  transition: all ease .3s;
+
+  &:hover {
+    color: #20A8D8;
+  }
+}
+
+.btn-search-documents {
+  border: 1px solid #20A8D8 !important;
+  background: transparent;
+  color: #20A8D8 !important;
+  opacity: 1 !important;
+  font-weight: 400;
+
+  &:hover {
+    background: #20A8D8;
+    color: #fff !important;
+  }
+}
+
+.btn-link-back {
+  color: #20A8D8 !important;
+  transition: all ease-in-out .15s;
+
+  &:hover {
+    color: rgb(35, 110, 138) !important;
+  }
+}
+
+.uploaded-green {
+  color: rgb(40, 167, 69);
+}
+
+.downloaded-blue {
+  color: rgb(32, 168, 216) !important;
+}
+
+.downloaded-red {
+  color: rgb(220, 53, 69);
+}
+
+.btn-blue-theme {
+  background: rgb(32, 168, 216) !important;
+  color: #fff;
+
+  &:hover {
+    background: rgb(35, 110, 138) !important;
+    color: #fff;
+  }
+}
+
+.dropdown-menu.dropdown-menu-right.language-picker-dropdown {
+  padding-top: 0;
+}
+
+.dropdown-menu.dropdown-menu-right.user-information {
+  padding-top: 0;
+
+  .account-header {
+    strong {
+      font-weight: 600 !important;
+      font-family: 'Segoe UI', 'Raleway', sans-serif;
+    }
+  }
+
+  .dropdown-item {
+    color: rgba(0,0,0,.85) !important;
+
+    i {
+      color: rgba(0,0,0,.85) !important;
+    }
+  }
+}
+
+.language-picker-dropdown {
+  a {
+    font: .75rem/1.6 'Segoe UI', "Raleway";
+  }
+}
+
+input.custom-search-input::placeholder {
+  font-weight: 400;
+}
+
+
+.custom-users-label {
+  margin-bottom: 0 !important;
+}
+
+.users-permissions {
+  padding-left: 0;
+}     
+

@@ -1,4 +1,5 @@
-
+// import { Calendar } from '@fullcalendar/core';
+// import dayGridPlugin from '@fullcalendar/daygrid';
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -15,8 +16,30 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('datatable', require('./components/dataTable.vue'));
+Vue.component('calendar-container', require('./components/calendarContainer.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
+window.addEventListener('load', () => {
+	let translatorPlugin = {}
+
+	translatorPlugin.install = function (Vue, options) {
+		let { translations } = options
+
+		Vue.prototype.$trans = string => _.get(translations, string);
+	}
+
+	Vue.use(translatorPlugin, {
+		translations: i18n
+	})
+
+	const app = new Vue({
+	    el: '#app',
+	});
+})
+
+
+
+
+
+
+

@@ -1,5 +1,7 @@
-
 window._ = require('lodash');
+
+// window attach helper
+// window.trans = (string) => _.get(window.i18n, string);
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -11,6 +13,7 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    require('@coreui/coreui');
 } catch (e) {
     
 }
@@ -55,3 +58,7 @@ if (token) {
 //     cluster: 'mt1',
 //     encrypted: true
 // });
+
+$(() => {
+    $('[data-toggle="tooltip"]').tooltip()
+})

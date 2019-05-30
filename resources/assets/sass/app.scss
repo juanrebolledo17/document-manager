@@ -1,3 +1,6 @@
+// Fullcalendar.io CSS files
+// @import "node_modules/@fullcalendar/core/main";
+// @import "node_modules/@fullcalendar/daygrid/main";
 
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
@@ -8,37 +11,16 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap.scss";
 
-// custom styles
+// Icons 
+@import '~simple-line-icons/css/simple-line-icons.css';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+// Coreui
+@import '~@coreui/coreui/dist/css/coreui.min.css';
+
+// Custom styles
+@import 'styles';
 
 
-.landing-page {
-  width: 100vw !important;
-  height: 100vh !important;
-  background: coral;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 
-  .card {
-    width: 55%;
-  }
 
-  .login-page,
-  .register-page,
-  .email-reset-page,
-  .reset-page,
-  .verify-email-page {
-    width: 100vw !important;
-    height: 100vh !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .btn-register-from-login-page {
-      padding-left: 0 !important;
-    }
-  }
-}
